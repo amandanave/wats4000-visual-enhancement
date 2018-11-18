@@ -19,7 +19,7 @@
     <div class="word-list-container">
       <h2>Word List</h2>
       <ul class="word-list">
-        <!-- TODO: Add transition-group around the list item here to animate items in the word list. -->
+
         <transition-group name="slideRight" tag="div" appear>
           <li v-for="word in wordList" v-bind:key="word">{{ word }}&nbsp;<button v-on:click="removeWord(word)" class="remove-word">x</button></li>
         </transition-group>
@@ -36,7 +36,7 @@
           </li>
         </transition-group>
       </ul>
-      <!-- TODO: Add message to display here if no results are found. -->
+
     <div v-if="results && results.length === 0" class="no-results">
       <h2>No Words Found</h2>
       <p>Try your search again with different parameters.</p>
