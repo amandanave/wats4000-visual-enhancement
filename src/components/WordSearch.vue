@@ -58,7 +58,7 @@ import MessageContainer from '@/components/MessageContainer';
 export default {
   name: 'WordSearch',
   components: {
-    // TODO: Define child components here.
+
   spinner: CubeSpinner,
   'message-container': MessageContainer
   },
